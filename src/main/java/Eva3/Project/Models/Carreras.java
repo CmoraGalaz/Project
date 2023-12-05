@@ -6,15 +6,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "carreras") //estaba alegando porque la tabla se llama user
+@Table(name = "carreras")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Carreras {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "codcarr")
-    private Integer codCarr;
+    @Column(name = "codcar")
+    private Integer codcar;
     @Column(name = "nomcarrera")
     private String nomCarrera;
 }

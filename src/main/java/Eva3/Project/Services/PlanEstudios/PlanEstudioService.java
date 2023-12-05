@@ -1,8 +1,11 @@
 package Eva3.Project.Services.PlanEstudios;
 
 
+import Eva3.Project.Models.DTOS.EstudiantesInscritos;
+import Eva3.Project.Models.Inscripcion;
 import Eva3.Project.Models.PlanesEstudios;
 import Eva3.Project.Repositories.IPlanEstudioRepository;
+import Eva3.Project.Services.Inscripcion.InscripcionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +16,8 @@ import java.util.Optional;
 public class PlanEstudioService implements IPlanEstudioService<PlanesEstudios> {
     @Autowired
     private IPlanEstudioRepository iPlanEstudioRepository;
+
+
 
     @Override
     public List<PlanesEstudios> findAll() {
@@ -39,4 +44,6 @@ public class PlanEstudioService implements IPlanEstudioService<PlanesEstudios> {
         iPlanEstudioRepository.deleteById(id);
 
     }
+
+
 }

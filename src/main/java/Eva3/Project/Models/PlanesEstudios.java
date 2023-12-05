@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "planesestudios") //estaba alegando porque la tabla se llama user
+@Table(name = "planestudios") //estaba alegando porque la tabla se llama user
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,4 +25,6 @@ public class PlanesEstudios {
     private Integer codAsig;
     @Column(name = "nom_asig")
     private String nombreAsig;
+    @Column(name = "idhor")
+    private Integer idhor;
 }

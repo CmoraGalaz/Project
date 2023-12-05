@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Estudiantes {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "rut")
     private String Rut;
     @Column(name = "nombres")

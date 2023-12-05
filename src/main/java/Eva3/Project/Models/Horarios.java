@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Horarios {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "idhora")
     private Integer idHorario;
     @Column(name = "cod_asig")
-    private Integer CodAsig;
-    @Column(name = "rut")
-    private String Rut;
+    private Integer cod_asig;
+    @Column(name = "dia")
+    private String dia;
 
 }
